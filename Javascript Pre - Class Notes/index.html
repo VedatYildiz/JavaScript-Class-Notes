@@ -21,10 +21,29 @@
         a multi-line comment */
         // var a = 25;
         // console.log(a);
-        var a = b = c = 5;
-        console.log('a =',a, 'b =',b, 'c =',c);
-        var firstName = 'John' , lastName = 'Doe';
-        console.log(firstName,lastName);
+        // var a = b = c = 5;
+        // console.log('a =',a, 'b =',b, 'c =',c);
+        // var firstName = 'John' , lastName = 'Doe';
+        // console.log(firstName,lastName);
+
+        // // var is function scoped
+        // // program to print hello
+        // // variable a cannot be used here
+        // function sayHello(){
+        //     // variable a can be used here.
+        //     var a = 'hello';
+        //     console.log(a);
+        // }
+        // // variable a cannot be used here.
+        // sayHello(); // hello
+
+        a = 3;
+        console.log(a); // undefined (not an error)
+        var a;
+        b = 3;
+        console.log(b);
+        let b; // Uncaught RefereneceError: a is not defined
+        /* If you use var and you didn't declare a variable there will not be an error but if you use let and you didn't declare a variable there will be an error */
     </script>
 </body>
 </html>
